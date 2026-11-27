@@ -1,0 +1,13 @@
+
+{
+  "name": "central-qa",
+  "version": "0.1.0",
+  "description": "User-centered cubing operations management platform.",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {}
+}
