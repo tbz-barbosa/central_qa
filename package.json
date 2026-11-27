@@ -1,4 +1,3 @@
-
 {
   "name": "central-qa",
   "version": "0.1.0",
@@ -9,5 +8,7 @@
     "apps/*",
     "packages/*"
   ],
-  "scripts": {}
+  "scripts": {
+    "dev": "npm run dev --workspace=@central-qa/cubing-ops -- --host 0.0.0.0 --port 5173 --strictPort"
+  }
 }

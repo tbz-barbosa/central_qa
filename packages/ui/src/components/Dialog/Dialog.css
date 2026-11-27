@@ -1,0 +1,120 @@
+
+.qa-dialog {
+  box-sizing: border-box;
+  padding: 0;
+
+  background: var(--qa-color-surface);
+  color: var(--qa-color-text);
+
+  border: 1px solid var(--qa-color-border);
+  border-radius: var(--qa-radius-lg);
+
+  font-family: var(--qa-font-family);
+  font-size: var(--qa-font-size-sm);
+}
+
+.qa-dialog[open] {
+  display: flex;
+  flex-direction: column;
+}
+
+.qa-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* Modal central */
+
+.qa-dialog--modal {
+  width: min(480px, calc(100% - 32px));
+  max-width: none;
+  max-height: calc(100% - 32px);
+  margin: auto;
+}
+
+/* Drawer lateral */
+
+.qa-dialog--drawer {
+  position: fixed;
+  inset: 0 0 0 auto;
+  margin: 0;
+
+  width: min(420px, 100%);
+  max-width: none;
+  height: 100%;
+  max-height: none;
+
+  border-radius: var(--qa-radius-lg) 0 0
+    var(--qa-radius-lg);
+}
+
+/* Cabeçalho */
+
+.qa-dialog-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--qa-space-3);
+
+  flex-shrink: 0;
+  padding: var(--qa-space-4);
+  border-bottom: 1px solid var(--qa-color-border);
+}
+
+.qa-dialog-heading {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.qa-dialog-heading h2 {
+  margin: 0;
+  font-size: var(--qa-font-size-lg);
+  font-weight: var(--qa-font-weight-semibold);
+  line-height: var(--qa-line-height-tight);
+}
+
+.qa-dialog-heading p {
+  margin: var(--qa-space-1) 0 0;
+  font-size: var(--qa-font-size-sm);
+  color: var(--qa-color-text-secondary);
+}
+
+/* Conteúdo */
+
+.qa-dialog-body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+
+  padding: var(--qa-space-4);
+}
+
+/* Rodapé */
+
+.qa-dialog-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: var(--qa-space-2);
+
+  flex-shrink: 0;
+  padding: var(--qa-space-3) var(--qa-space-4);
+  border-top: 1px solid var(--qa-color-border);
+}
+
+/* Telas compactas */
+
+@media (max-height: 600px) {
+  .qa-dialog-header,
+  .qa-dialog-body,
+  .qa-dialog-footer {
+    padding: var(--qa-space-3);
+  }
+}
+
+@media (max-width: 480px) {
+  .qa-dialog--drawer {
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,112 @@
+
+.qa-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--qa-space-1);
+  min-width: 0;
+}
+
+.qa-field-label {
+  font-size: var(--qa-font-size-sm);
+  font-weight: var(--qa-font-weight-medium);
+  color: var(--qa-color-text);
+}
+
+.qa-field-control {
+  width: 100%;
+  min-width: 0;
+  min-height: var(--qa-control-height-md);
+
+  padding: var(--qa-space-2) var(--qa-space-3);
+
+  background: var(--qa-color-surface);
+  color: var(--qa-color-text);
+
+  border: 1px solid var(--qa-color-border);
+  border-radius: var(--qa-radius-md);
+
+  font-family: var(--qa-font-family);
+  font-size: var(--qa-font-size-sm);
+  line-height: var(--qa-line-height-normal);
+
+  transition: border-color 150ms;
+}
+
+.qa-field-control::placeholder {
+  color: var(--qa-color-text-secondary);
+}
+
+.qa-field-control:hover:not(:disabled) {
+  border-color: var(--qa-color-text-secondary);
+}
+
+.qa-field-control:focus-visible {
+  outline: 2px solid var(--qa-color-info);
+  outline-offset: 2px;
+}
+
+.qa-field-control[aria-invalid="true"] {
+  border-color: var(--qa-color-danger);
+}
+
+.qa-field-control:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Textos auxiliares */
+
+.qa-field-hint {
+  font-size: var(--qa-font-size-xs);
+  color: var(--qa-color-text-secondary);
+}
+
+.qa-field-error {
+  font-size: var(--qa-font-size-xs);
+  color: var(--qa-color-danger);
+}
+
+/* Textarea */
+
+.qa-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Checkbox */
+
+.qa-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--qa-space-2);
+
+  font-size: var(--qa-font-size-sm);
+  color: var(--qa-color-text);
+
+  cursor: pointer;
+}
+
+.qa-checkbox input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  flex-shrink: 0;
+
+  accent-color: var(--qa-color-brand);
+  cursor: pointer;
+}
+
+.qa-checkbox input:focus-visible {
+  outline: 2px solid var(--qa-color-info);
+  outline-offset: 2px;
+}
+
+.qa-checkbox input:disabled {
+  cursor: not-allowed;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .qa-field-control {
+    transition: none;
+  }
+}
