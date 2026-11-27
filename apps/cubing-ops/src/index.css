@@ -1,0 +1,35 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--qa-font-family);
+  font-size: var(--qa-font-size-sm);
+  font-weight: var(--qa-font-weight-normal);
+  line-height: var(--qa-line-height-normal);
+}
+
+h1 {
+  font-size: var(--qa-font-size-xl);
+  font-weight: var(--qa-font-weight-semibold);
+  line-height: var(--qa-line-height-tight);
+}
+
+h2 {
+  font-size: var(--qa-font-size-lg);
+  font-weight: var(--qa-font-weight-semibold);
+  line-height: var(--qa-line-height-tight);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}

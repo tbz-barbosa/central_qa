@@ -1,0 +1,63 @@
+
+/* CENTRAL QA — Design Tokens v0.1 */
+
+/* Identidade compartilhada */
+
+:root {
+  --qa-color-brand: #FFE600;
+  --qa-color-on-brand: #30343B;
+  --qa-color-charcoal: #30343B;
+}
+
+/* Tema claro */
+
+:root,
+[data-theme="light"] {
+  color-scheme: light;
+
+  --qa-color-background: #F2F3F5;
+  --qa-color-surface: #FFFFFF;
+  --qa-color-surface-hover: #E8EAED;
+  --qa-color-border: #D7DBE0;
+
+  --qa-color-text: #24272D;
+  --qa-color-text-secondary: #626873;
+
+  --qa-color-success: #17643A;
+  --qa-color-success-bg: #DCEFE3;
+
+  --qa-color-warning: #854D0E;
+  --qa-color-warning-bg: #FFF0CE;
+
+  --qa-color-danger: #A62121;
+  --qa-color-danger-bg: #FCE2E2;
+
+  --qa-color-info: #2459A6;
+  --qa-color-info-bg: #E3EDFC;
+}
+
+/* Tema escuro */
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --qa-color-background: #191B1F;
+  --qa-color-surface: #24272D;
+  --qa-color-surface-hover: #30343B;
+  --qa-color-border: #3A3E46;
+
+  --qa-color-text: #F3F4F6;
+  --qa-color-text-secondary: #AAB0BA;
+
+  --qa-color-success: #6DD69A;
+  --qa-color-success-bg: #1B3628;
+
+  --qa-color-warning: #F5BD59;
+  --qa-color-warning-bg: #3D301A;
+
+  --qa-color-danger: #FF8585;
+  --qa-color-danger-bg: #402527;
+
+  --qa-color-info: #8AB8FF;
+  --qa-color-info-bg: #23344D;
+}
