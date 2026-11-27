@@ -1,0 +1,12 @@
+
+.qa-card {
+  min-width: 0;
+  padding: var(--qa-space-4);
+  background: var(--qa-color-surface);
+  border: 1px solid var(--qa-color-border);
+  border-radius: var(--qa-radius-lg);
+}
+
+.qa-card--compact {
+  padding: var(--qa-space-3);
+}

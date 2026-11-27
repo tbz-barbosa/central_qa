@@ -1,0 +1,46 @@
+
+.qa-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--qa-space-1);
+
+  padding: var(--qa-space-1) var(--qa-space-2);
+  border-radius: var(--qa-radius-full);
+
+  font-size: var(--qa-font-size-xs);
+  font-weight: var(--qa-font-weight-medium);
+  line-height: var(--qa-line-height-tight);
+}
+
+.qa-status-badge-dot {
+  width: 6px;
+  height: 6px;
+  flex-shrink: 0;
+  border-radius: var(--qa-radius-full);
+  background: currentColor;
+}
+
+.qa-status-badge--neutral {
+  background: var(--qa-color-surface-hover);
+  color: var(--qa-color-text-secondary);
+}
+
+.qa-status-badge--success {
+  background: var(--qa-color-success-bg);
+  color: var(--qa-color-success);
+}
+
+.qa-status-badge--warning {
+  background: var(--qa-color-warning-bg);
+  color: var(--qa-color-warning);
+}
+
+.qa-status-badge--danger {
+  background: var(--qa-color-danger-bg);
+  color: var(--qa-color-danger);
+}
+
+.qa-status-badge--info {
+  background: var(--qa-color-info-bg);
+  color: var(--qa-color-info);
+}
